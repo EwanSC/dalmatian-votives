@@ -281,7 +281,7 @@ ggsave("output_images/chronological_distribution/10.LIRE_Dalmatia_epitaph_mean_h
 # now for weighted density using datplot and 'clean' dfs
 ## Work with https://cran.r-project.org/web/packages/datplot/vignettes/how-to.html
 
-  LIRE_Dal_corpus_scaled <- scaleweight(datsteps(LIRE_Dal_corpus_na,
+LIRE_Dal_corpus_scaled <- scaleweight(datsteps(LIRE_Dal_corpus_na,
                                                        stepsize = 15),
                                               var = "all")
 plot1 <-
