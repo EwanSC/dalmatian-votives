@@ -11,7 +11,7 @@ library(rjson)
 # https://edh.ub.uni-heidelberg.de/data/download/edh_data_text.csv
 # as of 10/09/2025
 EDH <-
-  read.csv("data/EDH/edh_data_text.csv",
+  read.csv("data/edh_data_text.csv",
            na.strings = c("","NA","NULL",NULL))
 
 EDH_Dalmatia <- filter(EDH, provinz == "Dal")
@@ -25,7 +25,7 @@ write.csv(EDH_Dalmatia,
 # https://doi.org/10.5281/zenodo.12036540
 # Data as of 2022-08-29
 
-EDCSJSON <- fromJSON(file= "data/EDCS/2022-08-29-EDCS_via_Lat_Epig-prov_Dalmatia-10140.json")
+EDCSJSON <- fromJSON(file= "data/2022-08-29-EDCS_via_Lat_Epig-prov_Dalmatia-10140.json")
 EDCSJSON_Data <- EDCSJSON$data
 EDCS_Dalmatia <- data.table::rbindlist(EDCSJSON_Data, fill = TRUE)
 write.csv(EDCS_Dalmatia,
@@ -38,7 +38,7 @@ write.csv(EDCS_Dalmatia,
 
 # LIRE
 LIRE <-
-  read_parquet("data/LIRE/LIRE_v3-0.parquet")
+  read_parquet("data/LIRE_v3-0.parquet")
 
 LIRE_filtered <- select(LIRE,
                         "LIST-ID",

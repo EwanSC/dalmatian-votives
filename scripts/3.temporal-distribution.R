@@ -5,9 +5,7 @@
 library(dplyr)
 library(datplot)
 library(ggplot2)
-library(sqldf)
 library(tidyverse)
-library("gridExtra")
 
 # data
 LIRE_votives <- read.csv("output_data/votives/LIRE_votives.csv")
@@ -45,10 +43,11 @@ ggsave("output_images/LIRE_votives_dating.jpeg",
 
 # now for weighted density using datplot and 'clean' dfs
 ## Work with https://cran.r-project.org/web/packages/datplot/vignettes/how-to.html
-LIRE_votives_scaled <- scaleweight(datsteps(LIRE_votives_clean, stepsize = 5),var = "all")
+LIRE_votives_scaled <- scaleweight(datsteps(LIRE_votives_clean, stepsize = 15),var = "all")
 
 plot2 <-
-  ggplot(data = LIRE_votives_scaled, aes(x = DAT_step, weight = weight)) +
+  ggplot(data = LIRE_votives_scaled,
+         aes(x = DAT_step, weight = weight)) +
   geom_density(alpha = 5)+
   labs(x = "Date (BCE/CE)", y = "Density",
        caption = paste("n = ",

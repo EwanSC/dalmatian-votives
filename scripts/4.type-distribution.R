@@ -5,9 +5,7 @@
 library(dplyr)
 library(datplot)
 library(ggplot2)
-library(sqldf)
 library(tidyverse)
-library("gridExtra")
 
 # data
 LIRE_votives <- read.csv("output_data/votives/LIRE_votives.csv")
@@ -60,11 +58,11 @@ LIRE_votives_types_scaled <- scaleweight(datsteps(LIRE_votives_types,
                                                         stepsize = 15),
                                                var = "all")
 
-plot2 <-
+plot1 <-
  ggplot(data = LIRE_votives_types_scaled,
        aes(x = DAT_step, linetype = variable, weight = weight)) +
+  scale_linetype(name = "Monument type") +
   geom_density(alpha = 10) +
-  scale_fill_manual(name = "Monument type") +
   labs(x = "Date (BCE/CE)", y = "Relative density of monument type",
        caption = paste("Altar n = ",
                        LIRE_votives_altar_count$n,
@@ -89,7 +87,7 @@ plot2 <-
     axis.text.y = element_blank(),
     axis.ticks.y = element_blank())
 
-plot(plot2)
+plot(plot1)
 
 ggsave("output_images/LIRE_votives_types_temporal.jpeg",
        width = 180, height = 100, unit = "mm", dpi = 600)
