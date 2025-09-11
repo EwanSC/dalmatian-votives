@@ -89,5 +89,5 @@ plot1 <-
 
 plot(plot1)
 
-ggsave("output_images/LIRE_votives_types_temporal.jpeg",
+ggsave("output_images/6.LIRE_votives_types_temporal.jpeg",
        width = 180, height = 100, unit = "mm", dpi = 600)
