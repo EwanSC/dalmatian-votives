@@ -124,7 +124,7 @@ plot1 <-
 
 plot(plot1)
 
-ggsave("output_images/EDH_scatter.jpeg",
+ggsave("output_images/EDH_votives_scatter.jpeg",
        width = 180, height = 140, unit = "mm", dpi = 600)
 
 #EDCS
@@ -174,7 +174,7 @@ plot2 <-
 
 plot(plot2)
 
-ggsave("output_images/EDCS_scatter.jpeg",
+ggsave("output_images/EDCS_votives_scatter.jpeg",
        width = 180, height = 140, unit = "mm", dpi = 600)
 
 # LIRE
@@ -224,5 +224,5 @@ plot3 <-
 
 plot(plot3)
 
-ggsave("output_images/LIRE_scatter.jpeg",
+ggsave("output_images/LIRE_votives_scatter.jpeg",
        width = 180, height = 140, unit = "mm", dpi = 600)

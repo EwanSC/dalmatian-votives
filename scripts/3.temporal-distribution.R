@@ -21,14 +21,14 @@ LIRE_votives_altered <- type.convert(LIRE_votives_dates, as.is = TRUE)
 LIRE_votives_clean <- na.omit(LIRE_votives_altered)
 LIRE_votives_clean_count <- count(LIRE_votives_clean)
 
-# check distribution of monuments using clean
+# check distribution of monuments using mean
 ## Following https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S2326376821000085/resource/name/S2326376821000085sup001.pdf
 plot1 <-
  LIRE_votives_clean %>%
   mutate(timespan = not_after-not_before) %>%
   ggplot(aes(x = timespan)) +
   geom_histogram(binwidth = 10) +
-  labs(title = "Dlmatian votive inscriptions",
+  labs(title = "Dalmatian votive inscriptions",
        subtitle = "Date ranges",
        x = "Length of timespan (10 year bins)", y = "Number of inscriptions",
        caption = paste("n = ",
@@ -54,8 +54,9 @@ plot2 <-
        caption = paste("n = ",
                        LIRE_votives_clean_count$n,
                        sep = "",
-                       ".\nEpigraphic data = LIRE v.3.0 (CC BY 4.0)."),
-       title = "Chronological distribution of votive inscriptions",
+                       ".\nEpigraphic data = LIRE v.3.0 (CC BY 4.0).\n",
+                       "Method = Steinmann & Weissova 2021."),
+       title = "Temporal distribution of Dalmatian votive inscriptions",
        subtitle = paste("Using the weighted output of 'datsteps()' function ",
                         "with stepsize of ",
                         attributes(LIRE_votives_scaled)$stepsize,
