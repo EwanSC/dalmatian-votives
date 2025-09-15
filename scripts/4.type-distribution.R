@@ -73,7 +73,7 @@ plot1 <-
                        "; relief n = ",
                        LIRE_votives_relief_count$n,
                        sep = "",
-                       ".\nEpigraphic data = LIRE v.3.0 (CC BY 4.0).\n",
+                       ".\nEpigraphic data = LIRE v3.0 (CC BY 4.0).\n",
                        "Method = Steinmann & Weissova 2021."),
        title = "Temporal distribution of Dalmatian votive inscription monnument types",
        subtitle = paste("Using the weighted output of datsteps() ",
@@ -89,5 +89,5 @@ plot1 <-
 
 plot(plot1)
 
-ggsave("output_images/6.LIRE_votives_types_temporal.jpeg",
+ggsave("output_images/8.LIRE_votives_types_temporal.jpeg",
        width = 180, height = 100, unit = "mm", dpi = 600)

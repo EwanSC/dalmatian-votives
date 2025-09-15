@@ -55,12 +55,9 @@ library("ggspatial")
 # download rnaturalearthhires for basemap
 world <- ne_countries(scale = "large", returnclass = "sf")
 
-# adding road and province data from DARMC https://hub.arcgis.com/datasets/55a54a1350e14ca0b355d95633da3851_0
+# adding road from AWMC
 roman_roads <- st_read(
   "shape_files/Roman_roads.shp")
-
-roman_provincess <- st_read(
-  "shape_files/roman_empire_ad_69_provinces.shp")
 
 key_civ_sites <- data.frame(findspot_ancient_clean=c("Narona",
                                                      "Iader",
@@ -110,8 +107,8 @@ plot1 <-
        caption = paste("n = ",
                        EDH_votives_n$n,
                        sep = "",
-                       ".\nEpigraphic data = EDH (CC BY 4.0).\n",
-                       "Roads = DARMC (CC BY-NC-SA 4.0)."),
+                       ".\nEpigraphic data = EDH (CC BY-SA 4.0).\n",
+                       "Roads = AWMC (ODC ODBL)."),
        title = "Distribution of votive 'titsac' (tituli sacri)",
        subtitle = "EDH") +
   coord_sf(default_crs = st_crs(4326), xlim = c(14, 21), ylim = c(41.5, 46)) +
@@ -161,7 +158,7 @@ plot2 <-
                        EDCS_votives_n$n,
                        sep = "",
                        ".\nEpigraphic data = EDCS.\n",
-                       "Roads = DARMC (CC BY-NC-SA 4.0)"),
+                       "Roads = AWMC (ODC ODBL)"),
        title = "Distribution of tituli sacri",
        subtitle = "EDCS") +
   coord_sf(default_crs = st_crs(4326), xlim = c(14, 21), ylim = c(41.5, 46)) +
@@ -210,8 +207,8 @@ plot3 <-
        caption = paste("n = ",
                        LIRE_votives_n$n,
                        sep = "",
-                       ".\nEpigraphic data = LIRE v.3.0 (CC BY 4.0).\n",
-                       "Roads = DARMC (CC BY-NC-SA 4.0)."),
+                       ".\nEpigraphic data = LIRE v3.0 (CC BY 4.0).\n",
+                       "Roads = AWMC (ODC ODBL)."),
        title = "Distribution of votive inscriptions",
        subtitle = "LIRE") +
   coord_sf(default_crs = st_crs(4326), xlim = c(14, 21), ylim = c(41.5, 46)) +

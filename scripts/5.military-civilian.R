@@ -55,7 +55,7 @@ plot1 <-
                        "; 'Military' n = ",
                        LIRE_mil_count$n,
                        sep = "",
-                       ".\nEpigraphic data = LIRE v.3.0 (CC BY 4.0).\n",
+                       ".\nEpigraphic data = LIRE v3.0 (CC BY 4.0).\n",
                        "Method = Steinmann & Weissova 2021."),
        title = "Temporal distribution of Dalmatian votive inscriptions: Civilian vs Military",
        subtitle = paste("Using the weighted output of 'datsteps()' function ",
@@ -72,5 +72,5 @@ plot1 <-
 
 plot(plot1)
 
-ggsave("output_images/7.LIRE_civilian_military_temporal.jpeg",
+ggsave("output_images/9.LIRE_civilian_military_temporal.jpeg",
        width = 180, height = 100, unit = "mm", dpi = 600)
