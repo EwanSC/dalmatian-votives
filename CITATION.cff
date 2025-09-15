@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this, please cite it as below"
+authors:
+  - affiliation: "Macquarie University"
+    family-names: "Coopey"
+    given-names: "Ewan S."
+    orcid: "https://orcid.org/0000-0001-8633-6418"
+url: "https://github.com/EwanSC/dalmatian-votives"
+title: "Dalmatian Votives"
+type: dataset
+date-released: 15/09/2025
+abstract:
+  "Repository for data and visualisations behind forthcoming paper on Latin votive inscriptions in Dalmatia."
+version: "0.0.0"
+license: "GPL-3.0"
