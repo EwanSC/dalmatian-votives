@@ -27,4 +27,4 @@ Repository for data and visualisations behind forthcoming paper on Latin votive 
 For script 2, bubble plot. For scripts 3-5, aoristic analaysis using [datplot() v1.1.1](https://cran.r-project.org/web/packages/datplot/index.html). Explained and deployed in Steinmann, L, and B Weissova. 2021. ‘Datplot: A New R Package for the Visualization of Date Ranges in Archaeology’. _Advances in Archaeological Practice_ 9(4). DOI:[10.1017/aap.2021.8](https://doi.org/10.1017/aap.2021.8).
 
 # Version
-- v0.9.0 (final draft)
+- v0.9.1 (final draft for Zenodo)
