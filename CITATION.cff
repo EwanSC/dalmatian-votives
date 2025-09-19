@@ -10,6 +10,9 @@ title: "Dalmatian Votives"
 type: dataset
 date-released: 15/09/2025
 abstract:
-  "Repository for data and visualisations behind forthcoming paper on Latin votive inscriptions in Dalmatia."
+  "Repository for data and visualisations behind forthcoming paper on Latin votive inscriptions in Dalmatia. 
+  Coopey, E. S. (forthcoming), ‘Digital epigraphy in Dalmatia? Sources, methods, and potentials for studying votive inscriptions,
+  in L. Perinić (ed.), AMONG GODS AND MEN: The Cults and the Population of Roman Dalmatia According to the Votive 
+  Inscriptions, Archaeopress."
 version: "0.0.0"
 license: "GPL-3.0"

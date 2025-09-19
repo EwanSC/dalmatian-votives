@@ -1,5 +1,5 @@
 # Dalmatian Votives
-Repository for data and visualisations behind forthcoming paper on Latin votive inscriptions in Dalmatia. 
+Repository for data and visualisations behind forthcoming paper on Latin votive inscriptions in Dalmatia: Coopey, E. S. (forthcoming), ‘Digital epigraphy in Dalmatia? Sources, methods, and potentials for studying votive inscriptions, in L. Perinić (ed.), _AMONG GODS AND MEN: The Cults and the Population of Roman Dalmatia According to the Votive Inscriptions_, Archaeopress.
 
 ![scaled Bubble map of the distribution of votive inscriptions in roman dalmatia](output_images/3.LIRE_votives_scatter.jpeg)
 <figcaption> Bubble map of votive inscriptions in Dalmatia. CC BY-SA 4.0</figcaption>
