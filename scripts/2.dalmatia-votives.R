@@ -97,19 +97,20 @@ plot1 <-
   geom_sf(data = roman_roads, colour = "#a1a1a1", size = 0.6) +
   geom_sf(data = EDH_votives_ll, aes(size = n), alpha=0.8) +
   geom_sf(data = key_sites_civ_ll, colour = "#000000", size = 1) +
-  geom_text_repel(data = key_sites_civ_ll,
+  geom_label_repel(data = key_sites_civ_ll,
+                  fill = "white",
                   aes(x = Longitude,
                       y = Latitude,
                       label = findspot_ancient_clean), 
                   nudge_x = c(  -0.75,  -0.75,  -0.75), 
                   nudge_y = c(-0.5,-0.5,-0.5)) +
   labs(size = "Density",
-       caption = paste("n = ",
+       caption = paste("'titsac' n = ",
                        EDH_votives_n$n,
                        sep = "",
                        ".\nEpigraphic data = EDH (CC BY-SA 4.0).\n",
                        "Roads = AWMC (ODC ODBL)."),
-       title = "Distribution of votive 'titsac' (tituli sacri)",
+       title = "Distribution of votive inscriptions",
        subtitle = "EDH") +
   coord_sf(default_crs = st_crs(4326), xlim = c(14, 21), ylim = c(41.5, 46)) +
   annotation_north_arrow(location = "tl",which_north = "true", 
@@ -147,19 +148,20 @@ plot2 <-
   geom_sf(data = roman_roads, colour = "#a1a1a1", size = 0.6) +
   geom_sf(data = EDCS_votives_ll, aes(size = n), alpha=0.8) +
   geom_sf(data = key_sites_civ_ll, colour = "#000000", size = 1) +
-  geom_text_repel(data = key_sites_civ_ll,
+  geom_label_repel(data = key_sites_civ_ll,
+                  fill = "white",
                   aes(x = Longitude,
                       y = Latitude,
                       label = findspot_ancient_clean), 
                   nudge_x = c(  -0.75,  -0.75,  -0.75), 
                   nudge_y = c(-0.5,-0.5,-0.5)) +
   labs(size = "Density",
-       caption = paste("n = ",
+       caption = paste("'tituli sacri' n = ",
                        EDCS_votives_n$n,
                        sep = "",
                        ".\nEpigraphic data = EDCS.\n",
-                       "Roads = AWMC (ODC ODBL)"),
-       title = "Distribution of tituli sacri",
+                       "Roads = AWMC (ODC ODBL)."),
+       title = "Distribution of votive inscriptions",
        subtitle = "EDCS") +
   coord_sf(default_crs = st_crs(4326), xlim = c(14, 21), ylim = c(41.5, 46)) +
   annotation_north_arrow(location = "tl",which_north = "true", 
@@ -204,7 +206,7 @@ plot3 <-
                    nudge_x = c(  -0.75,  -0.75,  -0.75), 
                    nudge_y = c(-0.5,-0.5,-0.5)) +
   labs(size = "Density",
-       caption = paste("n = ",
+       caption = paste("'votive inscriptions' n = ",
                        LIRE_votives_n$n,
                        sep = "",
                        ".\nEpigraphic data = LIRE v3.0 (CC BY 4.0).\n",

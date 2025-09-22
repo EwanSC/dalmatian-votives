@@ -63,7 +63,7 @@ plot1 <-
        aes(x = DAT_step, linetype = variable, weight = weight)) +
   scale_linetype(name = "Monument type") +
   geom_density(alpha = 10) +
-  labs(x = "Date (BCE/CE)", y = "Relative density of monument type",
+  labs(x = "Date (BC/AD)", y = "Relative density of monument type",
        caption = paste("Altar n = ",
                        LIRE_votives_altar_count$n,
                        "; tabula n = ",
@@ -75,7 +75,7 @@ plot1 <-
                        sep = "",
                        ".\nEpigraphic data = LIRE v3.0 (CC BY 4.0).\n",
                        "Method = Steinmann & Weissova 2021."),
-       title = "Temporal distribution of Dalmatian votive inscription monnument types",
+       title = "Temporal distribution of Dalmatian votive inscription monument types",
        subtitle = paste("Using the weighted output of datsteps() ",
                         "with stepsize of ",
                         attributes(LIRE_votives_types_scaled)$stepsize,

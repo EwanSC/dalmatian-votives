@@ -27,7 +27,7 @@ plot1 <-
   ggplot(aes(x = timespan)) +
   geom_histogram(binwidth = 10) +
   labs(title = "Dalmatian votive inscriptions",
-       subtitle = "Date ranges",
+       subtitle = "Date ranges (LIRE)",
        x = "Length of timespan (10 year bins)", y = "Number of inscriptions",
        caption = paste("n = ",
                        LIRE_votives_clean_count$n,
@@ -49,7 +49,7 @@ plot2 <-
   ggplot(data = LIRE_votives_scaled,
          aes(x = DAT_step, weight = weight)) +
   geom_density(alpha = 5)+
-  labs(x = "Date (BCE/CE)", y = "Density",
+  labs(x = "Date (BC/AD)", y = "Density",
        caption = paste("n = ",
                        LIRE_votives_clean_count$n,
                        sep = "",
@@ -92,7 +92,7 @@ plot3 <-
   ggplot(data = EDCS_votives_scaled,
          aes(x = DAT_step, weight = weight)) +
   geom_density(alpha = 5)+
-  labs(x = "Date (BCE/CE)", y = "Density",
+  labs(x = "Date (BC/AD)", y = "Density",
        caption = paste("n = ",
                        EDCS_votives_clean_count$n,
                        sep = "",
@@ -135,7 +135,7 @@ plot4 <-
   ggplot(data = EDH_votives_scaled,
          aes(x = DAT_step, weight = weight)) +
   geom_density(alpha = 5)+
-  labs(x = "Date (BCE/CE)", y = "Density",
+  labs(x = "Date (BC/AD)", y = "Density",
        caption = paste("n = ",
                        EDH_votives_clean_count$n,
                        sep = "",

@@ -49,7 +49,7 @@ plot1 <-
          aes(x = DAT_step, linetype = variable, weight = weight)) +
   scale_linetype(name = "Category") +
   geom_density(alpha = 10)+
-  labs(x = "Date (BCE/CE)", y = "Density",
+  labs(x = "Date (BC/AD)", y = "Relative density",
        caption = paste("'Civilian' n = ",
                        LIRE_civ_count$n,
                        "; 'Military' n = ",
