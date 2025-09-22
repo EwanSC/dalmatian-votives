@@ -38,7 +38,7 @@ plot1 <-
 
 plot(plot1)
 
-ggsave("output_images/4.LIRE_votives_dating.jpeg",
+ggsave("output_images/1.LIRE_votives_dating.jpeg",
        width = 180, height = 140, unit = "mm", dpi = 600)
 
 # now for weighted density using datplot and 'clean' dfs
