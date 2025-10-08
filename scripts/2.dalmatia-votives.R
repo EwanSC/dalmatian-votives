@@ -122,6 +122,8 @@ plot(plot1)
 
 ggsave("output_images/2.EDH_votives_scatter.jpeg",
        width = 180, height = 140, unit = "mm", dpi = 600)
+ggsave("output_images/2.EDH_votives_scatter.pdf",
+       width = 180, height = 140, unit = "mm", dpi = 600)
 
 #EDCS
 EDCS_votives_place <- na.omit(EDCS_votives %>%
@@ -171,6 +173,8 @@ plot(plot2)
 
 ggsave("output_images/3.EDCS_votives_scatter.jpeg",
        width = 180, height = 140, unit = "mm", dpi = 600)
+ggsave("output_images/3.EDCS_votives_scatter.pdf",
+       width = 180, height = 140, unit = "mm", dpi = 600)
 
 # LIRE
 LIRE_votives_place <- na.omit(LIRE_votives %>%
@@ -218,4 +222,6 @@ plot3 <-
 plot(plot3)
 
 ggsave("output_images/4.LIRE_votives_scatter.jpeg",
+       width = 180, height = 140, unit = "mm", dpi = 600)
+ggsave("output_images/4.LIRE_votives_scatter.pdf",
        width = 180, height = 140, unit = "mm", dpi = 600)

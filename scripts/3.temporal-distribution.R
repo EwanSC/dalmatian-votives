@@ -40,6 +40,8 @@ plot(plot1)
 
 ggsave("output_images/1.LIRE_votives_dating.jpeg",
        width = 180, height = 140, unit = "mm", dpi = 600)
+ggsave("output_images/1.LIRE_votives_dating.pdf",
+       width = 180, height = 140, unit = "mm", dpi = 600)
 
 # now for weighted density using datplot and 'clean' dfs
 ## Work with https://cran.r-project.org/web/packages/datplot/vignettes/how-to.html
@@ -71,6 +73,8 @@ plot2 <-
 plot(plot2)
 
 ggsave("output_images/5.LIRE_votives_temporal.jpeg",
+       width = 180, height = 100, unit = "mm", dpi = 600)
+ggsave("output_images/5.LIRE_votives_temporal.pdf",
        width = 180, height = 100, unit = "mm", dpi = 600)
 
 #Compare with EDCS
@@ -115,6 +119,8 @@ plot(plot3)
 
 ggsave("output_images/6.EDCS_votives_temporal.jpeg",
        width = 180, height = 100, unit = "mm", dpi = 600)
+ggsave("output_images/6.EDCS_votives_temporal.pdf",
+       width = 180, height = 100, unit = "mm", dpi = 600)
 
 #Compare with EDH
 # data
@@ -157,6 +163,8 @@ plot4 <-
 plot(plot4)
 
 ggsave("output_images/7.EDH_votives_temporal.jpeg",
+       width = 180, height = 100, unit = "mm", dpi = 600)
+ggsave("output_images/7.EDH_votives_temporal.pdf",
        width = 180, height = 100, unit = "mm", dpi = 600)
 
 # all together

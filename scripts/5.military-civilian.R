@@ -74,3 +74,5 @@ plot(plot1)
 
 ggsave("output_images/9.LIRE_civilian_military_temporal.jpeg",
        width = 180, height = 100, unit = "mm", dpi = 600)
+ggsave("output_images/9.LIRE_civilian_military_temporal.pdf",
+       width = 180, height = 100, unit = "mm", dpi = 600)
